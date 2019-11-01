@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-ThinItalic.ttf);
+    src: url(fonts/Montserrat-Thin.ttf);
+    src: url(fonts/Montserrat-SemiBoldItalic.ttf);
+    src: url(fonts/Montserrat-SemiBold.ttf);
+    src: url(fonts/Montserrat-RegularItalic.ttf);
+    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat-MediumItalic.ttf);
+    src: url(fonts/Montserrat-Medium.ttf);
+    src: url(fonts/Montserrat-LightItalic.ttf);
+    src: url(fonts/Montserrat-Light.ttf);
+    src: url(fonts/Montserrat-Italic.ttf);
+    src: url(fonts/Montserrat-ExtraLightItalic.ttf);
+    src: url(fonts/Montserrat-ExtraBoldItalic.ttf);
+    src: url(fonts/Montserrat-ExtraBold.ttf);
+    src: url(fonts/Montserrat-BoldItalic.ttf);
+    src: url(fonts/Montserrat-Bold.ttf);
+    src: url(fonts/Montserrat-BlackItalic.ttf);
+    src: url(fonts/Montserrat-Black.ttf);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+}
