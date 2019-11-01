@@ -14,14 +14,13 @@
 }
 
 .wrapper a {
-  font-family: 'Montserrat',
- sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
 /* ФОРМА */
 .exit {
-  cursor:pointer;
+  cursor: pointer;
   position: absolute;
   height: 36px;
   width: 36px;
@@ -295,8 +294,7 @@ input:active {
     overflow: hidden;
   }
   .wrapper a {
-    font-family: 'Montserrat',
- sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
   .main {
@@ -421,8 +419,7 @@ input:active {
     overflow: hidden;
   }
   .wrapper a {
-    font-family: 'Montserrat',
- sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
   .main {
@@ -561,8 +558,7 @@ input:active {
     overflow: hidden;
   }
   .wrapper a {
-    font-family: 'Montserrat',
- sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
   .main {
@@ -701,8 +697,7 @@ input:active {
     overflow: hidden;
   }
   .wrapper a {
-    font-family: 'Montserrat',
- sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
   }
   .main {
