@@ -30,9 +30,35 @@ $red: #f24841;
     justify-content: center;
     align-items: center;
 }
+@mixin input{
+    border: 1px solid #d3d3d3;
+    padding: 20px 20px 20px 20px;
+    margin: 15px 0;
+    width: 290px;
+    
+
+    &:focus {
+        border: 1px solid $yellow;
+    }
+
+    &:active {
+        border: 1px solid $yellow;
+    }
+}
+@mixin label{
+    font-size:14px;
+    left:25px;
+    top:7px;
+    background-color:#fff;
+    padding:0 10px;
+}
+@mixin shadow{
+    box-shadow:0 5px 15px #00000015;
+}
 /* Миксины */
 
 .wrapper{
+    @include relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color:$black;
@@ -46,6 +72,101 @@ $red: #f24841;
     sans-serif;
     font-size: 16px;
 }
+/* ФОРМА */
+.exit{
+    @include absolute;
+    height: 36px;
+    width: 36px;
+    background-color:$red;
+    top:0;
+    right:0;
+    display: flex;
+    @include flex;
+    &:before{
+        content:" ";
+        @include absolute;
+        display: block;
+        width:32px;
+        height: 2px;
+        background-color:#fff;
+        color:$red;
+        transform: rotate(45deg);
+        
+    }
+    &:after {
+        content: " ";
+        @include absolute;
+        display: block;
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        color: $red;
+        transform: rotate(-45deg);
+    }
+}
+.form{
+    @include shadow;
+    @include absolute;
+    left:50%;
+    margin-left:-160px;
+    top:10%;  
+    background-color:#fff;
+    width: 320px;
+    z-index: 100;
+    text-align: center;
+    display: none;
+    h1{
+        font-size:24px;
+        @include bold;
+        line-height: 24px;
+        margin:40px 0;
+    }
+}
+input {
+    @include input;
+}
+.form_name{
+    @include relative;
+    >label{
+        @include absolute;
+        @include label;
+    }
+}
+.form_email {
+    @include relative;
+    >label {
+        @include absolute;
+        @include label;
+    }
+}
+.form_tel {
+    @include relative;
+    >label {
+        @include absolute;
+        @include label;
+    }
+}
+.form_btn{
+    
+    input{
+        background-color: $red;
+        text-align: center;
+        transition: .5s;
+        cursor: pointer;
+        color:#fff;
+        font-size:16px;
+        @include semi;
+        &:hover {
+            background-color: #b42727;
+        }
+
+        &:focus {
+            background-color: #b42727;
+        }
+    } 
+}
+/* ФОРМА КОНЕЦ*/
+
 .main{
     display: flex;
     @include flex;
@@ -134,6 +255,13 @@ $red: #f24841;
     text-align: center;
     vertical-align: middle;
     margin-bottom: 60px;
+    transition: .5s;
+    &:hover{
+        background-color: #b42727;
+    }
+    &:focus {
+        background-color: #b42727;
+    }
     a{
         line-height: 50px;
         padding:20px 60px;
@@ -148,48 +276,13 @@ $red: #f24841;
     left:80%;
 }
 
+/* Форма */
+
+/* Форма */
+
 /* МЕДИА ЗАПРОСЫ */
 
 @media (max-width: 767px) {
-
-    /* Главный цвета */
-
-    $yellow: #ffe155;
-    $black: #363636;
-    $red: #f24841;
-
-    /* Миксины */
-
-    @mixin relative {
-        position: relative;
-    }
-
-    @mixin absolute {
-        position: absolute;
-    }
-
-    @mixin regular {
-        position: normal;
-    }
-
-    @mixin semi {
-        font-weight: 600;
-    }
-
-    @mixin bold {
-        font-weight: bold;
-    }
-
-    @mixin inlineBlock {
-        display: inline-block;
-    }
-
-    @mixin flex {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Миксины */
 
     .wrapper {
         font-family: 'Montserrat', sans-serif;
@@ -303,7 +396,14 @@ $red: #f24841;
         text-align: center;
         vertical-align: middle;
         margin-bottom: 60px;
+        transition: .5s;
+        &:hover {
+            background-color: #b42727;
+        }
 
+        &:focus {
+            background-color: #b42727;
+        }
         a {
             line-height: 50px;
             padding: 20px 60px;
@@ -320,45 +420,6 @@ $red: #f24841;
 }
 
 @media (max-width: 480px) {
-    
-    /* Главный цвета */
-
-    $yellow: #ffe155;
-    $black: #363636;
-    $red: #f24841;
-
-    /* Миксины */
-
-    @mixin relative {
-        position: relative;
-    }
-
-    @mixin absolute {
-        position: absolute;
-    }
-
-    @mixin regular {
-        position: normal;
-    }
-
-    @mixin semi {
-        font-weight: 600;
-    }
-
-    @mixin bold {
-        font-weight: bold;
-    }
-
-    @mixin inlineBlock {
-        display: inline-block;
-    }
-
-    @mixin flex {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Миксины */
 
     .wrapper {
         font-family: 'Montserrat', sans-serif;
@@ -480,7 +541,15 @@ $red: #f24841;
         text-align: center;
         vertical-align: middle;
         margin-bottom: 60px;
+        transition: .5s;
 
+        &:hover {
+            background-color: #b42727;
+        }
+
+        &:focus {
+            background-color: #b42727;
+        }
         a {
             line-height: 50px;
             padding: 20px 60px;
@@ -496,48 +565,7 @@ $red: #f24841;
     }
 }
 
-
-
 @media (max-width: 411px) {
-
-    /* Главный цвета */
-
-    $yellow: #ffe155;
-    $black: #363636;
-    $red: #f24841;
-
-    /* Миксины */
-
-    @mixin relative {
-        position: relative;
-    }
-
-    @mixin absolute {
-        position: absolute;
-    }
-
-    @mixin regular {
-        position: normal;
-    }
-
-    @mixin semi {
-        font-weight: 600;
-    }
-
-    @mixin bold {
-        font-weight: bold;
-    }
-
-    @mixin inlineBlock {
-        display: inline-block;
-    }
-
-    @mixin flex {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Миксины */
 
     .wrapper {
         font-family: 'Montserrat', sans-serif;
@@ -659,7 +687,15 @@ $red: #f24841;
         text-align: center;
         vertical-align: middle;
         margin-bottom: 60px;
+        transition: .5s;
 
+        &:hover {
+            background-color: #b42727;
+        }
+
+        &:focus {
+            background-color: #b42727;
+        }
         a {
             line-height: 50px;
             padding: 20px 60px;
@@ -676,45 +712,6 @@ $red: #f24841;
 }
 
 @media (max-width: 360px) {
-
-    /* Главный цвета */
-
-    $yellow: #ffe155;
-    $black: #363636;
-    $red: #f24841;
-
-    /* Миксины */
-
-    @mixin relative {
-        position: relative;
-    }
-
-    @mixin absolute {
-        position: absolute;
-    }
-
-    @mixin regular {
-        position: normal;
-    }
-
-    @mixin semi {
-        font-weight: 600;
-    }
-
-    @mixin bold {
-        font-weight: bold;
-    }
-
-    @mixin inlineBlock {
-        display: inline-block;
-    }
-
-    @mixin flex {
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Миксины */
 
     .wrapper {
         font-family: 'Montserrat', sans-serif;
@@ -836,7 +833,15 @@ $red: #f24841;
         text-align: center;
         vertical-align: middle;
         margin-bottom: 60px;
+        transition: .5s;
 
+        &:hover {
+            background-color: #b42727;
+        }
+
+        &:focus {
+            background-color: #b42727;
+        }
         a {
             line-height: 50px;
             padding: 20px 60px;
