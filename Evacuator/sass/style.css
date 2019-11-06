@@ -443,15 +443,6 @@ input:active {
   .main_phone {
     padding-top: 0px;
     font-weight: 600;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .main_phone img {
     text-align: center;
@@ -582,15 +573,6 @@ input:active {
   .main_phone {
     padding-top: 0px;
     font-weight: 600;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .main_phone img {
     text-align: center;
@@ -721,15 +703,6 @@ input:active {
   .main_phone {
     padding-top: 0px;
     font-weight: 600;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .main_phone img {
     text-align: center;

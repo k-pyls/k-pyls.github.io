@@ -187,6 +187,7 @@ input {
     img{
         display: inline-block;
         vertical-align: middle;
+        
     }
     a{
         color:$black;
@@ -197,7 +198,7 @@ input {
     padding-top: 60px;
     
     h1{
-        font-size:48px;
+        font-size: 48px;
         line-height: 48px;
         color:$black;
         margin-top: 25px;
@@ -453,8 +454,7 @@ input {
     .main_phone {
         padding-top: 0px;
         font-weight: 600;
-        display: flex;
-        @include flex;
+        
 
         img {
             text-align: center;
@@ -599,8 +599,6 @@ input {
     .main_phone {
         padding-top: 0px;
         font-weight: 600;
-        display: flex;
-        @include flex;
 
         img {
             text-align: center;
@@ -745,8 +743,6 @@ input {
     .main_phone {
         padding-top: 0px;
         font-weight: 600;
-        display: flex;
-        @include flex;
 
         img {
             text-align: center;
